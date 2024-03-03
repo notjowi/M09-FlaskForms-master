@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}REGISTER{% endblock %}
+
+{% block titulo2 %}Contenido{% endblock %}
+
+{% block content %}
+
+  {% if result_msg == "JAEXISTEIX" %}
+    <h2>La cuenta <b>{{ nom }}</b> ya estaba en nuestra base de datos.</h2>
+  {% elif result_msg == "MODIFICAT" %}
+    <h2>La cuenta <b>{{ nom }}</b> ya estaba en nuestra base de datos y a sido modificada.</b></h2>
+  {% else %}
+    <h2>La cuenta <b>{{ nom }}</b> se a añadido con exito</b></h2>
+  {% endif %}
+
+{% endblock %}

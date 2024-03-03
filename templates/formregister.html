@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}REGISTER{% endblock %}
+
+{% block titulo2 %}Formulario de registro{% endblock %}
+
+{% block content %}
+
+    <form action = "{{url_for('register')}}" method = "post">
+        <fieldset>
+            <legend>El nombre de usuario puede de tener un maximo de 16 caracteres</legend>
+            <label for="name">Username</label><br>
+            <input type="text" id="name" name="name" required/><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Introduce una contraseña</legend>
+            <label for="password">Password</label><br>
+            <input type="password" id="passowrd" name="password" required/><br>
+            <p>La contraseña puede tener hasta 32 caracteres</p>
+        </fieldset>
+        <br>
+        <input type="submit" value="Register">
+    </form>
+
+    <p>Si ya estás registrado, puedes logearte pinchando en <a href="{{url_for('login')}}" target="_blank">este</a> link</p>
+{% endblock %}

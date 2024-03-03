@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}RESULTADDMAIL{% endblock %}
+
+{% block titulo2 %}Contenido{% endblock %}
+
+{% block content %}
+
+    {% if result_msg == "TROBAT" %}
+        
+    {% elif result_msg == "NOTROBAT" %}
+        <h2>No puedes ver el contenido hasta que te hayas registrado!</h2>
+    {% else %}
+        <h2>No puedes ver el contenido hasta que te hayas registrado!</h2>
+    {% endif %}
+
+{% endblock %}

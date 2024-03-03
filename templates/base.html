@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='tienda.png')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='tiendaapp.css')}}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <header id="rcorners">
+        <div><h1>Projecto Final <span>M09</span></h1></div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/login">Login</a></li>
+            <li id="aboutme"><a href="/aboutme">About me</a></li>
+        </ul>
+    </nav>
+    <section>
+        <p class="titulo2">{% block titulo2 %}{% endblock %}</p>
+        <div>{% block content %}{% endblock %}</div>
+    </section>
+    <footer class="rcorners2">Joel Cebrian Barragan - Asix-2 - Projecto</footer>
+</body>
+
+</html>

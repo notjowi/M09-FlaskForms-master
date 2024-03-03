@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}FORMLOGIN{% endblock %}
+
+{% block titulo2 %}Formulario de login{% endblock %}
+
+{% block content %}
+    <form action = "{{url_for('login')}}" method = "post">
+        <fieldset>
+            <legend>Introduce tu nombre y contraseña</legend>
+            <div>
+                <label for="name">Username</label>
+                <input type="text" id="name" name="name" required/>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required/>
+            </div>
+        </fieldset>
+        <br>
+        <input type="submit" value="Login">
+        <p>Si aún no estás registrado, puedes hacerlo pinchando en <a href="{{url_for('register')}}" target="_blank">este</a> link</p>
+    </form>
+{% endblock %}

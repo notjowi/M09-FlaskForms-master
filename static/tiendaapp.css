@@ -1,0 +1,137 @@
+body {
+  background-color: #151514;
+  max-width: 1070px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  font: 68.75% / 1.4545em Verdana, Helvetica, Arial, sans-serif;
+  line-height: normal;
+}
+#rcorners {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #353534;
+  border-color: #353534;
+  padding: 20px;
+}
+
+.rcorners2 {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #353534;
+  border-color: #353534;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+header div h1 {
+  color: #eaeaea;
+  text-decoration: none;
+  font-size: 1.8em;
+  font-weight: 400;
+  padding: 3px 0 8px 0;
+}
+
+header div h1 span {
+  color: #95b806;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 12px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px; /* Espacio entre elementos */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Eliminar margen derecho del último elemento */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d4d4d3; /* Color del texto */
+}
+#aboutme {
+  float: right;
+  padding-right: 5px;
+}
+nav ul li a:hover {
+  color: #666; /* Color del texto al pasar el ratón */
+}
+
+nav {
+  background-color: #272726;
+  margin: 0 0 12px 0;
+  height: 20px;
+}
+.titulo2 {
+  background-color: #272726;
+  top: 5px;
+  padding-left: 12px;
+  color: #bbb;
+  font-size: 18px;
+}
+section {
+  margin-bottom: 12px;
+  background: #353534;
+  border-color: #353534;
+}
+section div {
+  padding: 12px;
+  color: #bbb;
+}
+legend {
+  color: #60a0dc;
+}
+input {
+  background-color: #212120;
+  color: #ccc;
+  border: 1px solid #3e3e3d;
+}
+fieldset {
+  border-color: grey;
+}
+
+footer {
+  padding: 6px 12px;
+}
+.required:after {
+  content: "*";
+  color: red;
+}
+
+.producto {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.producto img {
+  max-width: 100%;
+}
+
+.producto h2 {
+  margin-top: 0;
+}
+
+/*body{
+    background-color: #151514;
+}
+h1 {background-color: aqua;
+    text-align: center;}
+
+h2, h3 {text-align: center;}
+
+#titulo {margin-bottom: 30px;}
+
+.text-enlace, .text-enlace2 {text-align:right}
+.text-enlace {margin-top: 30px;}
+
+.required:after {   content:"*";
+                    color:red}
+*/
